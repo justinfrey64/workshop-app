@@ -1,3 +1,9 @@
-<p>
-  video-list works!
-</p>
+<ul class="collection">
+  <li
+  class="collection-item"
+  (click)="selectVideo(video)"
+  [class.selected-video]="video.id === selectedVideoID"
+  *ngFor="let video of videoList">
+    {{video.title}} : {{video.author}}
+  </li>
+</ul>
