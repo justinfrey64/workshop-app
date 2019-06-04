@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Video } from 'src/app/types/types';
 
 @Component({
   selector: 'app-video-player',
@@ -12,4 +13,5 @@ export class VideoPlayerComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input() video: Video;
 }
